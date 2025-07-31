@@ -7,5 +7,4 @@ mysql-connector-python
 workalendar
 openpyxl
 datetime
-calendar
 plotly==6.1.2
