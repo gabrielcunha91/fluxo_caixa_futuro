@@ -8,3 +8,6 @@ workalendar
 openpyxl
 datetime
 plotly==6.1.2
+streamlit-aggrid
+
+
