@@ -405,13 +405,13 @@ LEFT JOIN T_ITENS_VENDIDOS_CATEGORIAS tivc
 UNION ALL
 
 SELECT 
-tre.ID as ID_Faturam_Agregado,
+trec2.ID as ID_Faturam_Agregado,
 te.ID as ID_Casa,
 te.NOME_FANTASIA as Casa,
 trec2.CLASSIFICACAO as Categoria,
 YEAR(vpa.DATA_RECEBIMENTO) as Ano,
 MONTH(vpa.DATA_RECEBIMENTO) as Mes,
-vpa.VALOR_PARCELA as Valor_Bruto,
+SUM(vpa.VALOR_PARCELA) as Valor_Bruto,
 0 as Desconto,
 vpa.VALOR_PARCELA as Valor_Liquido
 FROM View_Parcelas_Agrupadas vpa
