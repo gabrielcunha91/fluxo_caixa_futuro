@@ -53,7 +53,7 @@ with col_casas:
 
 with col_botao:
     st.write("")  # Espaçamento para alinhar com o multiselect
-    if st.button("🏢 Sem Sócios Externos", 
+    if st.button("🏢 Sem Sócios Externos ---", 
                  help="Seleciona automaticamente todas as casas que não possuem sócios externos (Bit_Socios_Externos = 0)", 
                  use_container_width=True):
         # Filtrando casas sem sócios externos
