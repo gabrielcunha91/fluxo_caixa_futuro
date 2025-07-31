@@ -1,0 +1,8 @@
+altair
+numpy
+pandas
+pydeck
+streamlit
+mysql-connector-python
+workalendar
+openpyxl
